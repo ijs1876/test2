@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: local
+
+server:
+  port: 8090
+---  
+#dev 환경  
+spring:
+  profiles: local
+test:
+  name: local   
+---  
+#prd 환경
+spring:
+  profiles: prd
+test:
+  name: prd            
